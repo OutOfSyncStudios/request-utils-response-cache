@@ -5,9 +5,10 @@
 const lolex = require('lolex');
 const chai = require('chai');
 const expect = chai.expect;
-const ResponseCache = require('..');
 const ObjectKeyCache = require('@mediaxpost/object-key-cache');
 const Redis = require('redis');
+const LogStub = require('logstub');
+const ResponseCache = require('..');
 
 const res = {
   _status: 0,
@@ -31,9 +32,10 @@ describe('ResponseCache', () => {
   let clock;
   let responseCache;
   let req, reqReturned;
+  let log = new LogStub();
 
   before(() => {
-    responseCache = new ResponseCache('test', { expire: 10 });
+    responseCache = new ResponseCache('test', { expire: 10 }, null, log);
     clock = lolex.install();
   });
 
@@ -222,13 +224,21 @@ describe('ResponseCache (ObjetKeyCache)', () => {
   });
 });
 
-describe('ResponseCache (Bad Cache Type)', () => {
+describe('ResponseCache (Bad Constructors)', () => {
   const client = 'asdfasdfsadf';
 
-  it('constructor', () => {
+  it('constructor (bad cache type)', () => {
     const setup = () => {
       const responseCache = new ResponseCache('test', { expire: 10 }, client);
     };
     expect(setup).to.throw();
   });
+
+  it('constructor (no namespace)', () => {
+    const setup = () => {
+      const responseCache = new ResponseCache();
+    };
+    expect(setup).to.throw();
+  });
+
 });
