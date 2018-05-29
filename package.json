@@ -1,7 +1,7 @@
 {
-  "name": "@mediaxpost/request-utils-rate-limiter",
-  "version": "0.0.1",
-  "description": "A cache-based, request rate limiter for ExpressJS",
+  "name": "@mediaxpost/request-utils-response-cache",
+  "version": "0.0.2",
+  "description": "A response cache for use with ExpressJS",
   "main": "index.js",
   "scripts": {
     "test": "nyc mocha",
