@@ -1,6 +1,6 @@
 {
   "name": "@mediaxpost/request-utils-response-cache",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A response cache for use with ExpressJS",
   "main": "index.js",
   "scripts": {
