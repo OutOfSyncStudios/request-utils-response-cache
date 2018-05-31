@@ -5,7 +5,8 @@
 ![Version](http://img.shields.io/npm/v/@mediaxpost/request-utils-response-cache.svg)
 ![Downloads](http://img.shields.io/npm/dt/@mediaxpost/request-utils-response-cache.svg)
 [![Build Status](https://travis-ci.org/MediaXPost/request-utils-response-cache.svg)](https://travis-ci.org/MediaXPost/request-utils-response-cache)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/e335eaddf1ce4a51a8cfbd6c24104e4b)](https://www.codacy.com/app/chronosis/request-utils-response-cache?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=MediaXPost/request-utils-response-cache&amp;utm_campaign=Badge_Grade)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/6d68f3b72e4646fbb82798af08035fe4)](https://www.codacy.com/app/chronosis/request-utils-response-cache?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=MediaXPost/request-utils-response-cache&amp;utm_campaign=Badge_Grade)
+[![Codacy Coverage Badge](https://api.codacy.com/project/badge/Coverage/6d68f3b72e4646fbb82798af08035fe4)](https://www.codacy.com/app/chronosis/request-utils-response-cache?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=MediaXPost/request-utils-response-cache&amp;utm_campaign=Badge_Coverage)
 
 [![Dependencies](https://david-dm.org/MediaXPost/request-utils-response-cache/status.svg)](https://david-dm.org/MediaXPost/request-utils-response-cache)
 
