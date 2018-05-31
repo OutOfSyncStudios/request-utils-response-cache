@@ -1,6 +1,6 @@
 {
   "name": "@mediaxpost/request-utils-response-cache",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "A response cache for use with ExpressJS",
   "main": "index.js",
   "scripts": {
@@ -18,13 +18,12 @@
   "keywords": [
     "express",
     "expressJS",
-    "rate limit",
-    "rate limiter",
-    "rate",
-    "limit",
-    "ip rate limit",
-    "ratelimit",
-    "ip"
+    "request",
+    "request cache",
+    "response cache",
+    "response",
+    "cache",
+    "request utils"
   ],
   "author": "Jay Reardon",
   "license": "MIT",
