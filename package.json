@@ -1,6 +1,6 @@
 {
   "name": "@outofsync/request-utils-response-cache",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "A response cache for use with ExpressJS",
   "main": "index.js",
   "scripts": {
