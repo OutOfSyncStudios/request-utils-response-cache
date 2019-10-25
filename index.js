@@ -2,9 +2,9 @@
 /* eslint no-unused-vars: warn */
 
 // Dependencies
-const __ = require('@mediaxpost/lodashext');
+const __ = require('@outofsync/lodash-ex');
 const moment = require('moment');
-const ObjectKeyCache = require('@mediaxpost/object-key-cache');
+const ObjectKeyCache = require('@outofsync/object-key-cache');
 const RedisClient = require('redis').RedisClient;
 const LogStub = require('logstub');
 
