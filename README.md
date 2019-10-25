@@ -1,16 +1,15 @@
 # request-utils-response-cache
 
-[![NPM](https://nodei.co/npm/@mediaxpost/request-utils-response-cache.png?downloads=true)](https://nodei.co/npm/@mediaxpost/request-utils-response-cache/)
+[![NPM](https://nodei.co/npm/@outofsync/request-utils-response-cache.png?downloads=true)](https://nodei.co/npm/@outofsync/request-utils-response-cache/)
 
-![Version](http://img.shields.io/npm/v/@mediaxpost/request-utils-response-cache.svg)
-![Downloads](http://img.shields.io/npm/dt/@mediaxpost/request-utils-response-cache.svg)
-[![Build Status](https://travis-ci.org/MediaXPost/request-utils-response-cache.svg)](https://travis-ci.org/MediaXPost/request-utils-response-cache)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/6d68f3b72e4646fbb82798af08035fe4)](https://www.codacy.com/app/chronosis/request-utils-response-cache?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=MediaXPost/request-utils-response-cache&amp;utm_campaign=Badge_Grade)
-[![Codacy Coverage Badge](https://api.codacy.com/project/badge/Coverage/6d68f3b72e4646fbb82798af08035fe4)](https://www.codacy.com/app/chronosis/request-utils-response-cache?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=MediaXPost/request-utils-response-cache&amp;utm_campaign=Badge_Coverage)
+![Version](http://img.shields.io/npm/v/@outofsync/request-utils-response-cache.svg)
+![Downloads](http://img.shields.io/npm/dt/@outofsync/request-utils-response-cache.svg)
+[![Build Status](https://travis-ci.org/OutOfSyncStudios/request-utils-response-cache.svg)](https://travis-ci.org/OutOfSyncStudios/request-utils-response-cache)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/1ec9acec98c943d4871bf14c9b5ec9c1)](https://www.codacy.com/manual/OutOfSyncStudios/request-utils-response-cache?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=OutOfSyncStudios/request-utils-response-cache&amp;utm_campaign=Badge_Grade)
+[![Codacy Coverage Badge](https://api.codacy.com/project/badge/Coverage/1ec9acec98c943d4871bf14c9b5ec9c1)](https://www.codacy.com/manual/OutOfSyncStudios/request-utils-response-cache?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=OutOfSyncStudios/request-utils-response-cache&amp;utm_campaign=Badge_Coverage)
+[![Dependencies](https://david-dm.org/OutOfSyncStudios/request-utils-response-cache/status.svg)](https://david-dm.org/OutOfSyncStudios/request-utils-response-cache)
 
-[![Dependencies](https://david-dm.org/MediaXPost/request-utils-response-cache/status.svg)](https://david-dm.org/MediaXPost/request-utils-response-cache)
-
-`request-utils-response-cache` is an inline, response caching mechanism for [ExpressJS](https://www.npmjs.com/package/express) and [request-utils](https://www.npmjs.com/package/@mediaxpost/request-utils) which uses a connected [ObjectKeyCache](https://www.npmjs.com/package/@mediaxpost/object-key-cache) or [Redis](https://www.npmjs.com/package/redis).
+`request-utils-response-cache` is an inline, response caching mechanism for [ExpressJS](https://www.npmjs.com/package/express) and [request-utils](https://www.npmjs.com/package/@outofsync/request-utils) which uses a connected [ObjectKeyCache](https://www.npmjs.com/package/@outofsync/object-key-cache) or [Redis](https://www.npmjs.com/package/redis).
 
 Response Caching is highly recommended for any client facing Express application or APIs that are build on top of Express that may be under even the most modest of loads.
 
@@ -35,14 +34,14 @@ If additional manipulation of the request is desired then it is possible to prov
 <a name="installation"></a>
 
 ```shell
-npm install @mediaxpost/request-utils-response-cache
+npm install @outofsync/request-utils-response-cache
 ```
 
 # [Usage](#usage)
 <a name="usage"></a>
 
 ```js
-const ResponseCache = require('@mediaxpost/request-utils-response-cache');
+const ResponseCache = require('@outofsync/request-utils-response-cache');
 let responseCache = new ResponseCache('responses', {
   expire: 300000, // Five minutes
   onCacheHit: ((req, res, data) => {
@@ -136,7 +135,7 @@ The configuration parameter expects and object that contains the following (with
 
 <a name="cache-object"></a>
 ## [Cache Object](#cache-object)
-The Cache object can be a active and [promisified Redis](https://www.npmjs.com/package/redis#promises) connect, or an active [ObjectKeyCache](https://www.npmjs.com/package/@mediaxpost/object-key-cache). If no value is set, then the response cache will create an internal Object Key Cache and use it.
+The Cache object can be a active and [promisified Redis](https://www.npmjs.com/package/redis#promises) connect, or an active [ObjectKeyCache](https://www.npmjs.com/package/@outofsync/object-key-cache). If no value is set, then the response cache will create an internal Object Key Cache and use it.
 
 <a name="logging-object"></a>
 ## [Logging Object](#logging-object)
